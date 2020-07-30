@@ -1,6 +1,17 @@
 # Changelog
 
 
+## 1.4 (2020-07-30)
+
+### New
+
+* Tb3 (#3) [andrewnags]
+
+  * new: mjr: wow! such mammal!
+
+  * fix: forgot doge
+
+
 ## 1.3 (2020-07-30)
 
 ### New
