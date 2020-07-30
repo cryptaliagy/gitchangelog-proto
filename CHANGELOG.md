@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 3.1 (2020-07-30)
+
+### Changes
+
+* Publish through insert + standard out. [Natalia Maximo]
+
+
 ## 3.0 (2020-07-30)
 
 ### Major
