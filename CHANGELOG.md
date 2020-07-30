@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 0.3 (2020-07-30)
+
+### Changes
+
+* Added changelog to file. [Natalia Maximo]
+
+
 ## 0.2 (2020-07-30)
 
 ### New
