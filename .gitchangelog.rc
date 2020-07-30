@@ -146,6 +146,7 @@ body_process = ReSub(r'((^|\n)[A-Z]\w+(-\w+)*: .*(\n\s+.*)*)+$', r'') | strip
 class Meta:
     def __init__(self):
         self.major_version = False
+        self.minor_version = False
 
 meta = Meta()
 
@@ -154,6 +155,8 @@ def up_version_reference(subject):
     import re
     if re.search(r'([mM]aj|[mM]jr):', subject):
         meta.major_version = True
+    elif re.search(r'[nN]ew:', subject):
+        meta.minor_version = True
     
     return subject
 
@@ -186,9 +189,12 @@ def load_version():
     current_version = Version(version_code)
 
     if meta.major_version:
-        new_version = Version(f'{current_version.major + 1}.0')
+        new_version = Version(f'{current_version.major + 1}.0.0')
+    elif meta.minor_version:
+        new_version = Version(f'{current_version.major}.{current_version.minor + 1}.0')
     else:
-        new_version = Version(f'{current_version.major}.{current_version.minor + 1}')
+        new_version = Version(f'{current_version.major}.{current_version.minor}.{current_version.micro + 1}')
+
 
     with open('.version', 'w') as f:
         f.write(f'VERSION={str(new_version)}')
