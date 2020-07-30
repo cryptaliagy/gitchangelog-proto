@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 3.0 (2020-07-30)
+
+### Major
+
+* Added package.json versioning script. [Natalia Maximo]
+
+
 ## 2.1 (2020-07-30)
 
 ### New
