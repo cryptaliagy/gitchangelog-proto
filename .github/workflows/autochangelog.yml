@@ -22,7 +22,7 @@ jobs:
           python-version: '3.7'
 
       - name: Install release packages
-        run: pip install gitchangelog pystache packaging
+        run: pip install -r requirements.txt
 
       - name: Pull tags from the repo
         run: git pull --tags
@@ -35,8 +35,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          add: ['CHANGELOG.md', '.version']
+          add: 'CHANGELOG.md'
           message: 'automatic gitchangelog generation'
-        
-      - name: Add tags and push
-        run: source .version && git tag $VERSION && git push --tags
+
+      - name: Get new version tag
+        run: echo "::set-env name=version::$(source .version && echo $VERSION)"
+
+      - name: Make commit for auto-generated changelog
+        uses: EndBug/add-and-commit@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          add: '.version'
+          message: 'automatic version increase'
+          tag: ${{ env.version }}
