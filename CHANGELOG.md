@@ -1,6 +1,17 @@
 # Changelog
 
 
+## 2.1 (2020-07-30)
+
+### New
+
+* Fish. [andrewnags]
+
+### Fix
+
+* More fish. [andrewnags]
+
+
 ## 2.0 (2020-07-30)
 
 ### Changes
