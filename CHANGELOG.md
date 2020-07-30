@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 1.2 (2020-07-30)
+
+### Changes
+
+* Added scare. [andrewnags]
+
+
 ## 1.1 (2020-07-30)
 
 ### New
