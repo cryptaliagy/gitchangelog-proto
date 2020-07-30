@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 1.0 (2020-07-30)
+
+### Major
+
+* Added auto-versioning. [Natalia Maximo]
+
+
 ## 0.3 (2020-07-30)
 
 ### Changes

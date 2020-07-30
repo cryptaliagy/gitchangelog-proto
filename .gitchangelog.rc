@@ -152,7 +152,7 @@ meta = Meta()
 @TextProc
 def up_version_reference(subject):
     import re
-    if re.match(r'[mM](aj|jr)', subject):
+    if re.search(r'([mM]aj|[mM]jr):', subject):
         meta.major_version = True
     
     return subject
@@ -195,8 +195,20 @@ def load_version():
 
     return f"{str(new_version)} ({datetime.now().date().isoformat()})"
 
+class NewVersion:
+    def __init__(self):
+        self._cache = None
+    def __str__(self):
+        if self._cache:
+            return self._cache
+        self._cache = load_version()
+        return self._cache
+    
+    def __iter__(self):
+        return str(self).__iter__()
 
-unreleased_version_label = load_version()
+
+unreleased_version_label = NewVersion()
 
 
 ## ``output_engine`` is a callable
