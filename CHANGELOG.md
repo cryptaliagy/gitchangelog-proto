@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 1.3 (2020-07-30)
+
+### New
+
+* Birb. [andrewnags]
+
+
 ## 1.2 (2020-07-30)
 
 ### Changes
