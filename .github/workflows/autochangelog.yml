@@ -22,7 +22,7 @@ jobs:
           python-version: '3.7'
 
       - name: Install release packages
-        run: pip install gitchangelog pystache packaging
+        run: pip install -r requirements.txt
 
       - name: Pull tags from the repo
         run: git pull --tags
