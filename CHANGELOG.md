@@ -1,6 +1,25 @@
 # Changelog
 
 
+## 1.1 (2020-07-30)
+
+### New
+
+* Added auto-changelog generation yml. [Natalia Maximo]
+
+### Fix
+
+* Used requirements file for installation. [Natalia Maximo]
+
+* Presumably fixed workflow file. [Natalia Maximo]
+
+* Changed extension. [Natalia Maximo]
+
+* Moved workflow file. [Natalia Maximo]
+
+* Changed extension. [Natalia Maximo]
+
+
 ## 1.0 (2020-07-30)
 
 ### Major
