@@ -1,6 +1,17 @@
 # Changelog
 
 
+## 2.0 (2020-07-30)
+
+### Changes
+
+* Scary dino. [andrewnags]
+
+### Major
+
+* Added dinosaur. [andrewnags]
+
+
 ## 1.4 (2020-07-30)
 
 ### New
