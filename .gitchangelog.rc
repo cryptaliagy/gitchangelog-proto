@@ -281,11 +281,11 @@ include_merge = True
 ##
 ## The default is to use all commits to make the changelog.
 #revs = ["^1.0.3", ]
-revs = [
-    Caret(
-        FileFirstRegexMatch(
-            "CHANGELOG.md",
-            r"(?P<rev>^[0-9]+\.[0-9]+(\.[0-9]+)?((a|b|rc)[0-9]+)?(\.post[0-9]+)?(\.dev[0-9]+)?$)",
-    "HEAD"
-]
-#revs = []
+#revs = [
+#    Caret(
+#        FileFirstRegexMatch(
+#            "CHANGELOG.md",
+#            r"(?P<rev>^[0-9]+\.[0-9]+(\.[0-9]+)?((a|b|rc)[0-9]+)?(\.post[0-9]+)?(\.dev[0-9]+)?$)",)),
+#    "HEAD"
+#]
+revs = []
