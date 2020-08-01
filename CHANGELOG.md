@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 4.0.0 (2020-08-01)
+
+### Major
+
+* Added possible implementation of micro versions. [andrewnags]
+
+
 ## 3.1 (2020-07-30)
 
 ### Changes
